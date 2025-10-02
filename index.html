@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  body{margin:0}
+  #c{display:none}
+  [for=c]{position:relative;display:block;width:100%;height:100vh;cursor:pointer}
+  [for=c] img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;pointer-events:none}
+  [for=c] img:last-of-type{display:none}
+  #c:checked+[for=c] img:first-of-type{display:none}
+  #c:checked+[for=c] img:last-of-type{display:block}
+</style>
+</head>
+<body>
+  <input id=c type=checkbox>
+  <label for=c>
+    <img src=https://erie.uk/yawha/A/1.webp>
+    <img src=https://erie.uk/yawha/A/2.webp>
+  </label>
+</body>
+</html>
